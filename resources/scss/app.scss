@@ -1,6 +1,7 @@
 // @import "~bootstrap/scss/bootstrap";
 @import "./partials/colors";
 @import "./partials/header";
+@import "./partials/main.scss";
 
 //RESET
 * {
@@ -40,6 +41,7 @@ button {
     font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
+    
     &:hover {
         color: $dc-blue;
         background-color: $dc-white;
