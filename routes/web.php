@@ -13,6 +13,51 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
 Route::get('/', function () {
-    return view('welcome');
+    return view('welcome', [
+        'comics'=> config('comics'),
+        'navbar'=> [
+            [
+                'title'=> 'characters',
+                'link'=> '/characters'
+            ],
+            [
+                'title'=> 'comics',
+                'link'=> '/comics'
+            ],
+            [
+                'title'=> 'movies',
+                'link'=> '/movies'
+            ],
+            [
+                'title'=> 'tv',
+                'link'=> '/tv'
+            ],
+            [
+                'title'=> 'games',
+                'link'=> '/games'
+            ],
+            [
+                'title'=> 'collectibles',
+                'link'=> '/collectibles'
+            ],
+            [
+                'title'=> 'videos',
+                'link'=> '/videos'
+            ],
+            [
+                'title'=> 'fans',
+                'link'=> '/fans'
+            ],
+            [
+                'title'=> 'news',
+                'link'=> '/news'
+            ],
+            [
+                'title'=> 'shop',
+                'link'=> '/shop'
+            ]
+        ]
+    ]);
 });
