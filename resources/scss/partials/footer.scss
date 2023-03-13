@@ -1,0 +1,101 @@
+.blu-bar {
+    background-color: $dc-blue;
+    padding: 3rem;
+    ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+        li {
+            color: $dc-white;
+            a {
+                display: flex;
+                align-items: center;
+                text-transform: uppercase;
+                text-decoration: none;
+                color: $dc-white;
+                &:hover {
+                    text-decoration: underline;
+                }
+                img {
+                    height: 50px;
+                    margin-right: 1rem;
+                }
+            }
+        }
+    }
+}
+.nav-list {
+    background-color: $dc-black;
+    background-image: url('../img/footer-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        nav {
+            display: flex;
+            padding: 2rem 0;
+            color: $dc-white;
+            
+            .col {
+                margin-right: 3rem;                    
+                h3 {
+                    text-transform: uppercase;
+                    margin-bottom: 1rem;
+                }
+                ul {
+                    list-style: none;
+                    margin-bottom: 1rem;
+                    a {
+                        color: $dc-lightgray;
+                        font-size: 0.7rem;
+                        text-decoration: none;
+                        text-transform: capitalize;
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+        .logo-bg {
+            width: 70%;
+            background-image: url('../img/dc-logo-bg.png');
+            background-repeat: no-repeat;                    
+            background-position: right;
+        }
+    }
+}
+.social-bar {
+    padding: 2rem;
+    background-color: $dc-darkgray;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        .btn {
+            color: $dc-white;
+            border: 2px solid $dc-blue;
+            padding: 1rem;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-weight: bold;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        .social-box {
+            display: flex;
+            align-items: center;
+            
+            span {
+                color: $dc-blue;
+                font-size: 1.2rem;
+                font-weight: bold;
+                margin-right: 2rem;
+            }
+            a {
+                margin-left: 1rem;                        
+            }
+        }
+    }
+}
