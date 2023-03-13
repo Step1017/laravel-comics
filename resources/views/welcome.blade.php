@@ -9,7 +9,7 @@
             <div class="title">
                 <h2>CURRENT SERIES</h2>
             </div>
-            <div class="card-container">
+            <div class="card-container ">
                 @foreach ($comics as $card)
                     <div class="card">
                         <div class="img-container">
